@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(73, 70, 255);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.box{
+    border: 1px solid black;
+    width: 400px;
+    margin-top: 30px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 50px;
+
+    
+}
+h1{
+    text-align: center;
+}
+.img{
+    text-align: center;
+}
+.toss_img, .heads_img, .tails_img{
+    width: 200px;
+    border-radius:100px ;
+}
+
+.toss{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid blue;
+    padding: 12px;
+    border-radius: 20px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+}
+.reset{
+    padding: 15px 30px 15px 30px;
+     background-color: orange;
+    border: 0px solid ;
+    border-radius: 10px;
+    font-size: 18px;
+
+}
+.flip{
+    padding: 15px 30px 15px 30px;
+    background-color: rgb(47, 44, 223);
+    border: 0px solid ;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+}
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .buttons {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reset, .flip {
+        width: 100%;
+    }
+}
